@@ -23,9 +23,11 @@ driver = webdriver.Chrome(PATH,options=options)
 driver.get('https://codeforces.com/enter?back=%2F')
 username=driver.find_element_by_id('handleOrEmail')
 print('Enter Username: ')
+#User Enters his/her username here:
 username.send_keys(input())
 
 password=driver.find_element_by_id('password')
+#User enters his/her password here:
 pwd=getpass("Please enter password (Your password will not appear on screen while typing):")
 password.send_keys(pwd)
 
