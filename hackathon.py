@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from PIL import Image
+from getpass import getpass
 from tabulate import tabulate
 from terminaltables import AsciiTable
 import time
@@ -21,10 +22,12 @@ driver = webdriver.Chrome(PATH,options=options)
 #write code to login!!!!
 driver.get('https://codeforces.com/enter?back=%2F')
 username=driver.find_element_by_id('handleOrEmail')
-username.send_keys('rajatgupta142002@gmail.com')
+print('Enter Username: ')
+username.send_keys(input())
 
 password=driver.find_element_by_id('password')
-password.send_keys('technokret21*')
+pwd=getpass("Please enter password (Your password will not appear on screen while typing):")
+password.send_keys(pwd)
 
 button=driver.find_element_by_class_name('submit')
 button.click()
