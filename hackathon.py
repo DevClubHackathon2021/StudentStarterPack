@@ -20,21 +20,21 @@ options.headless=True
 PATH = r"C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH,options=options)
 #write code to login!!!!
-driver.get('https://codeforces.com/enter?back=%2F')
-username=driver.find_element_by_id('handleOrEmail')
-print('Enter Username: ')
-#User Enters his/her username here:
-username.send_keys(input())
+# driver.get('https://codeforces.com/enter?back=%2F')
+# username=driver.find_element_by_id('handleOrEmail')
+# print('Enter Username: ')
+# #User Enters his/her username here:
+# username.send_keys(input())
 
-password=driver.find_element_by_id('password')
-#User enters his/her password here:
-pwd=getpass("Please enter password (Your password will not appear on screen while typing):")
-password.send_keys(pwd)
+# password=driver.find_element_by_id('password')
+# #User enters his/her password here:
+# pwd=getpass("Please enter password (Your password will not appear on screen while typing):")
+# password.send_keys(pwd)
 
-button=driver.find_element_by_class_name('submit')
-button.click()
+# button=driver.find_element_by_class_name('submit')
+# button.click()
 
-time.sleep(2)
+# time.sleep(2)
 
 # print("Please enter your command, type help for list of commands: ")
 # command=input()
