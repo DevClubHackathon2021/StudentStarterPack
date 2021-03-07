@@ -7,6 +7,7 @@ This is a bot that actually consists of many bots which are:
 **To be able to use this bot in your system you have to follow following steps:**
 - Download ChromeDriver which is available at: https://chromedriver.chromium.org/downloads
 Check your Chrome version and download the chrome driver version accordingly and just copy and paste the ```chromedriver.exe``` file to path: ```C:\Program Files (x86)\```.
+- Install python and set up python from https://www.python.org/downloads/
 - Install selenium library using ```pip install selenium``` in cmd.
 - Also, in the bots we have asked user to enter credentials each time he/she runs the program, if you do not want to enter them again and again just open the python file and follow following steps:
    1. Look for the following code : ```password.sendkey(pwd)```
